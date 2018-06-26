@@ -1,9 +1,13 @@
+params [
+	"_trubb_start",	// marker where units will spawn
+	"_trubb_end",	// marker that units will head for
+	"_vehicletype",		// type of vehicle to spawn
+	["_trubb_side", EAST, [WEST] ]	// side that units will belong to, default is EAST
+];
 
-params ["_trubb_start", "_trubb_end", "_vehicletype"];
+private _vehicle = [getMarkerPos _trubb_start, 180, _vehicletype, _trubb_side] call BIS_fnc_spawnVehicle;
 
-private _group = [getMarkerPos _trubb_start, 180, _vehicletype, EAST] call BIS_fnc_spawnVehicle;
-
-_group addWaypoint [getMarkerPos _trubb_end, 0];
+_group = _vehicle select 2;	// select group of vehicle crew
 
 _group setFormation "LINE";
 _group setCombatMode "RED";
