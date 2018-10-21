@@ -3,6 +3,9 @@ class CfgFunctions {
 	class trubb {
 		class trubb {
 			class spawnGroup {};
+			class countPlayers {};
+			class calculatePercentage {};
+			class checkPercentage {};
 		};
 	};
 };
