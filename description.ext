@@ -9,3 +9,34 @@ class CfgFunctions {
 		};
 	};
 };
+
+class CfgDebriefing {
+
+	class o_dead_end {
+		title = "BLUFOR wins!";
+		subtitle = "OPFOR sustained too large losses!";
+		description = "OPFOR sustained too large losses!";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
+	};
+
+	class w_dead_end {
+		title = "OPFOR win!";
+		subtitle = "BLUFOR sustained too large losses!";
+		description = "BLUFOR sustained too large losses!";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0.5,0.0,0.,1};
+	};
+
+	class i_dead_end {
+		title = "BLUFOR win!";
+		subtitle = "INDEP sustained too large losses!";
+		description = "INDEP sustained too large losses!";
+		pictureBackground = "";
+		picture = "n_inf";
+		pictureColor[] = {0.5,0.0,0.,1};
+	};
+
+};

@@ -1,10 +1,10 @@
 
+// to count how many players are present at start of mission
 if (isServer) {
-	w_startCount = [ WEST ] call trubb_fnc_countPlayers;	// to count how many players are present at start of mission
+	w_startCount = [ west ] call trubb_fnc_countPlayers;
+	publicVariable w_startCount;
+	o_startCount = [ east ] call trubb_fnc_countPlayers;
+	publicVariable w_startCount;
+	i_startCount = [ independent ] call trubb_fnc_countPlayers;
+	publicVariable w_startCount;
 };
-
-// call once at start of mission to set a variable like playersAtStart<SIDE>
-// put in a trigger and feed calculate percentage with playersAtStart<SIDE> and the side
-// could possibly magically solve it by creating a function to do everything automagically for a side and a percentage
-// like ["SIDE", "PERCENTAGE"] call checkIfTime2End
-// https://github.com/dklollol/Olsen-Framework-Arma-3
