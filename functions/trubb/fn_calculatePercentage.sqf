@@ -8,8 +8,8 @@ private _condition = { side _x == _playerSide && alive _x };	// we are only inte
 private _playersCurrent = _condition count (allPlayers - entities "HeadlessClient_F");	// players currently alive on the side provided
 
 // alt do
-private _playersCurrent = ["_playerSide"] fn_countPlayers;
+private _playersCurrent = [_playerSide] call trubb_fn_countPlayers;
 
-private _percentage = round ( _playersAtStart - _playersCurrent ) / ( _playersAtStart / 100 );	// percentage of players still alive with percent magic
+private _percentage = ( _playersAtStart - _playersCurrent ) / ( _playersAtStart * 0.01 );	// percentage of players still alive with percent magic
 
 _percentage;	// return the percentage for comparison in a trigger or the like

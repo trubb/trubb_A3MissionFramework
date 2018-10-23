@@ -6,6 +6,7 @@ class CfgFunctions {
 			class countPlayers {};
 			class calculatePercentage {};
 			class checkPercentage {};
+			class endCondition {};
 		};
 	};
 };

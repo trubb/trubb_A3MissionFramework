@@ -13,5 +13,5 @@ if (_side == west) {
 	_startCount = i_startCount;
 }
 
-private _percentageLeft = [_side, _startCount] fn_calculatePercentage.sqf;
+private _percentageLeft = [_side, _startCount] call trubb_fn_calculatePercentage;
 
