@@ -5,7 +5,6 @@ class CfgFunctions {
 			class spawnGroup {};
 			class countPlayers {};
 			class calculatePercentage {};
-			class checkPercentage {};
 			class endCondition {};
 		};
 	};
@@ -37,7 +36,7 @@ class CfgDebriefing {
 		description = "INDEP sustained too large losses!";
 		pictureBackground = "";
 		picture = "n_inf";
-		pictureColor[] = {0.5,0.0,0.,1};
+		pictureColor[] = {0,0.5,0,1};
 	};
 
 };
