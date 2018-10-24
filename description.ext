@@ -11,6 +11,32 @@ class CfgFunctions {
 };
 
 class CfgDebriefing {
+/*
+ * Make sure to change the different end options according
+ * to what sides are available in the mission.
+ *
+ * Colors are RGBA
+ * blufor: {0.0,0.3,0.6,1};
+ * indep: {0,0.5,0,1};
+ * opfor: {0.5,0,0,1};
+ */
+	class b_dead_end {
+		title = "OPFOR win!";
+		subtitle = "BLUFOR sustained too large losses!";
+		description = "BLUFOR sustained too large losses!";
+		pictureBackground = "";
+		picture = "o_inf";
+		pictureColor[] = {0,0.5,0,1};
+	};
+
+	class i_dead_end {
+		title = "INDEP retreats!";
+		subtitle = "INDEP sustained too large losses!";
+		description = "INDEP sustained too large losses!";
+		pictureBackground = "";
+		picture = "n_inf";
+		pictureColor[] = {0,0.5,0,1};
+	};
 
 	class o_dead_end {
 		title = "BLUFOR wins!";
@@ -19,24 +45,6 @@ class CfgDebriefing {
 		pictureBackground = "";
 		picture = "b_inf";
 		pictureColor[] = {0.0,0.3,0.6,1};
-	};
-
-	class w_dead_end {
-		title = "OPFOR win!";
-		subtitle = "BLUFOR sustained too large losses!";
-		description = "BLUFOR sustained too large losses!";
-		pictureBackground = "";
-		picture = "o_inf";
-		pictureColor[] = {0.5,0.0,0.,1};
-	};
-
-	class i_dead_end {
-		title = "BLUFOR win!";
-		subtitle = "INDEP sustained too large losses!";
-		description = "INDEP sustained too large losses!";
-		pictureBackground = "";
-		picture = "n_inf";
-		pictureColor[] = {0,0.5,0,1};
 	};
 
 };

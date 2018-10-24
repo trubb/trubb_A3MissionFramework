@@ -1,10 +1,21 @@
+/*
+ * Author: Trubb
+ * Calculates the percentage of dead players for a team
+ * Arguments:
+ * 0: side <side>
+ * 1: playersAtStart <number>
+ *
+ * Returns:
+ * Percentage of players who are dead (0-100) <number>
+ */
+
 params [
-	"_playerSide",
+	"_side",
 	"_playersAtStart"
 ];
 
-private _playersAlive = [_playerSide] call trubb_fnc_countPlayers;
+private _playersAlive = [_side] call trubb_fnc_countPlayers;
 
-private _percentage = ( _playersAtStart - _playersAlive ) / ( _playersAtStart * 0.01 );	// percentage of players not alive by magic
+private _percentage = ( _playersAtStart - _playersAlive ) / ( _playersAtStart * 0.01 );
 
-_percentage;	// return the percentage for comparison in a trigger or the like
+_percentage;
