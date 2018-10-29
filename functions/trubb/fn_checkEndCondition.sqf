@@ -5,8 +5,8 @@
  *
  * Arguments:
  * 0: side <side>
- * 1: startCount <number>
- * 2: casualtyLimit <number>
+ * 1: casualtyLimit <number>
+ * 2: startCount <number>
  *
  * Returns:
  * state <boolean>
@@ -28,4 +28,13 @@ if (_casualties >= _trubb_casualty_limit) exitWith {
 		case independent : {"trubb_i_dead_end" call BIS_fnc_endMissionServer;};
 		case east : {"trubb_o_dead_end" call BIS_fnc_endMissionServer;};
 	};
+
+	[
+		{
+			forceEnd;
+			endMission "END1";
+		},
+		[],
+		10
+	] call CBA_fnc_waitAndExecute;
 };
