@@ -2,34 +2,29 @@
 class CfgFunctions {
 	class trubb {
 		class trubb {
-			class spawnGroup {};
-			class countPlayers {};
 			class calculatePercentage {};
+			class checkEndCondition {};
+			class countPlayers {};
 			class endCondition {};
+			class kneel {};
+			class spawnGroup {};
+			class stand {};
 		};
 	};
 };
 
 class CfgDebriefing {
-/*
- * Make sure to change the different end options according
- * to what sides are available in the mission.
- *
- * Colors are RGBA
- * blufor: {0.0,0.3,0.6,1};
- * indep: {0,0.5,0,1};
- * opfor: {0.5,0,0,1};
- */
-	class b_dead_end {
-		title = "OPFOR win!";
+
+	class trubb_b_dead_end {
+		title = "BLUFOR retreats!";
 		subtitle = "BLUFOR sustained too large losses!";
 		description = "BLUFOR sustained too large losses!";
 		pictureBackground = "";
-		picture = "o_inf";
-		pictureColor[] = {0,0.5,0,1};
+		picture = "b_inf";
+		pictureColor[] = {0.0,0.3,0.6,1};
 	};
 
-	class i_dead_end {
+	class trubb_i_dead_end {
 		title = "INDEP retreats!";
 		subtitle = "INDEP sustained too large losses!";
 		description = "INDEP sustained too large losses!";
@@ -38,13 +33,13 @@ class CfgDebriefing {
 		pictureColor[] = {0,0.5,0,1};
 	};
 
-	class o_dead_end {
-		title = "BLUFOR wins!";
+	class trubb_o_dead_end {
+		title = "OPFOR retreats!";
 		subtitle = "OPFOR sustained too large losses!";
 		description = "OPFOR sustained too large losses!";
 		pictureBackground = "";
 		picture = "b_inf";
-		pictureColor[] = {0.0,0.3,0.6,1};
+		pictureColor[] = {0.5,0,0,1};
 	};
 
 };

@@ -1,6 +1,7 @@
 /*
  * Author: Trubb
  * Counts human players that are alive
+ *
  * Arguments:
  * 0: side <side>
  *
@@ -9,9 +10,9 @@
  */
 
 params [
-	"_side"
+	"_trubb_side"
 ];
 
-private _players = { (side _x == _side) && (alive _x) } count (allPlayers - entities "HeadlessClient_F");
+private _players_alive = { (side _x == _trubb_side) && (alive _x) } count (allPlayers - entities "HeadlessClient_F");
 
-_players;
+_players_alive;

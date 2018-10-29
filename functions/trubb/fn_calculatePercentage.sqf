@@ -10,12 +10,12 @@
  */
 
 params [
-	"_side",
-	"_playersAtStart"
+	"_trubb_side",
+	"_trubb_players_start"
 ];
 
-private _playersAlive = [_side] call trubb_fnc_countPlayers;
+private _players_alive = [_trubb_side] call trubb_fnc_countPlayers;
 
-private _percentage = ( _playersAtStart - _playersAlive ) / ( _playersAtStart * 0.01 );
+private _dead_percentage = ( _trubb_players_start - _players_alive ) / ( _trubb_players_start * 0.01 );
 
-_percentage;
+_dead_percentage;

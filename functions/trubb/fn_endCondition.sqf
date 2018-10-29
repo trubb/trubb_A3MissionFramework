@@ -3,35 +3,18 @@
  * Checks if any of the sides in the mission have lost enough
  * soldiers to warrant retreating from the battlefield.
  *
- * COMMENT OUT OR REMOVE ANY UNUSED SIDE
- *
  * Arguments:
- * w/e/i_casualtyLimit <number> - set in initServer.sqf, can also be changed during the game.
+ * None
  *
  * Returns:
- * State <boolean>
+ * None
  */
 
-private _bluforPercentage = [west, blufor_startCount] call trubb_fnc_calculatePercentage;
-private _indepPercentage = [independent, indep_startCount] call trubb_fnc_calculatePercentage;
-private _opforPercentage = [east, opfor_startCount] call trubb_fnc_calculatePercentage;
-
-// check if blufor is deadest
-if (_bluforPercentage >= blufor_casualtyLimit) exitWith {
-	"b_dead_end" call BIS_fnc_endMissionServer;
-	true;
-};
-
-// check if indep is deadest
-if (_indepPercentage >= indep_casualtylimit) exitWith {
-	"i_dead_end" call BIS_fnc_endMissionServer;
-	true;
-};
-
-// check if opfor is deadest
-if (_opforPercentage >= opfor_casualtyLimit) exitWith {
-	"o_dead_end" call BIS_fnc_endMissionServer;
-	true;
-};
-
-false;
+{
+	_x params ["_trubb_side", "_trubb_casualty_limit", "_trubb_start_count"];
+	[_trubb_side, _trubb_casualty_limit, _trubb_start_count] call trubb_fnc_checkEndCondition;
+} forEach [ 
+	[east, trubb_east_casualty_limit, trubb_east_start_count],
+	[independent, trubb_indep_casualty_limit, trubb_indep_start_count],
+	[west, trubb_west_casualty_limit, trubb_west_start_count] 
+];
