@@ -1,6 +1,6 @@
 /*
  * Author: Trubb
- * Counts human players that are alive
+ * Counts human players that are alive on a side
  *
  * Arguments:
  * 0: side <side>

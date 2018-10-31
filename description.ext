@@ -6,6 +6,7 @@ class CfgFunctions {
 			class checkEndCondition {};
 			class countPlayers {};
 			class endCondition {};
+			class initialize {};
 			class kneel {};
 			class spawnGroup {};
 			class stand {};

@@ -1,9 +1,9 @@
 /*
  * Author: Trubb
- * Calculates the percentage of dead players for a team
+ * Calculates the percentage of dead players on a team
  * Arguments:
  * 0: side <side>
- * 1: playersAtStart <number>
+ * 1: players at start <number>
  *
  * Returns:
  * Percentage of players who are dead (0-100) <number>
