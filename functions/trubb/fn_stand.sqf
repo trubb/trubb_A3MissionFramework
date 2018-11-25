@@ -1,5 +1,5 @@
 params ["_units"];
 
 {
-	[_x, "MIDDLE"] remoteexec ["setunitpos", _x]
+	[_x, "UP"] remoteexec ["setunitpos", _x]
 } foreach _units;
