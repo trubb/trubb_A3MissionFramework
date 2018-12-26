@@ -1,4 +1,13 @@
 
+[] execVM "f\safeStart\f_safeStart.sqf";
+
+spawnable_squad = [
+	"B_Soldier_F",
+	"B_Soldier_F",
+	"B_Soldier_F",
+	"B_Soldier_F"
+];
+
 // The maximum percentage of casualties a given side can take before automatically losing.
 // Edit their values to your liking
 trubb_east_casualty_limit = 75;
