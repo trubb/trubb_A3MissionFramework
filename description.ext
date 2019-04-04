@@ -73,13 +73,13 @@ class cfgNotifications
 
 class Params
 {
-		class f_param_mission_timer
+	class f_param_mission_timer
 	{
-			title = "Safe Start";
-			values[] = {0,1,2,4,6,9,14};
-			texts[] = {"Safe Start Off","2","3","5","7","10","15"};
-			default = 0;
-			code = "f_param_mission_timer = %1";
+		title = "Safe Start";
+		values[] = {0,1,2,4,6,9,14};
+		texts[] = {"Safe Start Off","2","3","5","7","10","15"};
+		default = 0;
+		code = "f_param_mission_timer = %1";
 	};
 };
 
