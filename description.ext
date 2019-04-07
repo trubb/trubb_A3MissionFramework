@@ -28,6 +28,7 @@ class CfgFunctions {
 			class moFire {};
 			class spawnGroup {};
 			class stand {};
+			class targetOffset {};
 		};
 	};
 
