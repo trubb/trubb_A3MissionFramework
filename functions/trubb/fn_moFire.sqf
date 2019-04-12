@@ -22,7 +22,7 @@ params [
 
 private _trubb_tgt = [_trubb_target] call trubb_fnc_targetOffset;
 
-private _trubb_unit setVehicleAmmoDef 1;
-private _trubb_unit doArtilleryFire [_trubb_tgt, _trubb_mag, _trubb_rounds];
+_trubb_unit setVehicleAmmoDef 1;
+_trubb_unit doArtilleryFire [_trubb_tgt, _trubb_mag, _trubb_rounds];
 
 nil;
