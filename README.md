@@ -31,4 +31,4 @@ An example of use is having soldiers that are lying down in a trench pop up to f
 
 To use place a trigger covering the soldiers that are to be affected, set it to activate on these soldier's side present, and put ```[thislist] call trubb_fnc_kneel/stand;``` in the on activation field of the trigger.  
 
-The condition can be for example a trigger: in the trigger you placed put ```triggerActivated yourtrigger``` or your custom condition as the .
+The condition can be for example a trigger: in the trigger you placed put ```triggerActivated yourtrigger``` or your custom condition as what activates the functions.
