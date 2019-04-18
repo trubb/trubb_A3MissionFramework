@@ -27,6 +27,7 @@ class CfgFunctions {
 			class kneel {};
 			class moFire {};
 			class spawnGroup {};
+			class spawnOnHeadless {};
 			class stand {};
 			class targetOffset {};
 		};
