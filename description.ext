@@ -9,8 +9,11 @@ onLoadMission = "";
 overviewText = "";
 
 DisabledAi = 1;
-//respawn = 1;
-//respawnDelay = 2;
+/*
+RESPAWN and DELAY handled via 3DEN editor
+respawn = 1;
+respawnDelay = 2;
+*/
 respawnButton = 1;
 enableDebugConsole = 1;
 respawnOnStart = -1;
