@@ -31,11 +31,11 @@
     /* AI specific */
     force ace_medical_ai_enabledFor = 2;                        // Medical system enabled for AI
     force ace_medical_AIDamageThreshold = 1.3;                  // AI can take x damage
-    force ace_medical_statemachine_AIUnconsciousness = true;    // AI can go unconscious
+    force ace_medical_statemachine_AIUnconsciousness = false;   // AI can go unconscious
     force ace_medical_statemachine_fatalInjuriesAI = 0;         // AI can receive fatal injuries in any state
 
     /* Players specific */
-    force ace_medical_playerDamageThreshold = 1.3;              // Players can take x damage
+    force ace_medical_playerDamageThreshold = 2.0;              // Players can take x damage
     force ace_medical_statemachine_fatalInjuriesPlayer = 0;     // Fatal damage can be received in any state
 
     /* Fatal damage */
