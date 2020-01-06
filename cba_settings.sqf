@@ -3,7 +3,7 @@
     force ace_advanced_fatigue_enabled = true;              // Advanced fatigue on, no other config
 
     /*************** ACE Cookoff ***************/
-    force ace_cookoff_enable = false;                       // Cookoff is off because it's annoying as hell
+    force ace_cookoff_enable = 0;                               // Cookoff is off because it's annoying as hell
     force ace_cookoff_enableAmmobox = false;
     force ace_cookoff_enableAmmoCookoff = false;
 
@@ -16,6 +16,8 @@
     force ace_interation_disableNegativeRating = true;      // Shooting friendlies etc dont result in friendly AI killing you back.
     force ace_captives_allowHandcuffOwnSide = false;        // Can't put handcuffs on own side because retards...
     force ace_weather_windSimulation = false;               // turn off ACE's own map-based wind simulation
+    force ace_weather_showCheckAirTemperature = false;      // And no dumb "show air temp" action either..
+
 
     /*************** ACE Hearing ***************/
     force ace_hearing_enableCombatDeafness = false;         // you don't go deaf when shooting
@@ -28,12 +30,12 @@
     /*************** ACE Medical ***************/
     /* AI specific */
     force ace_medical_ai_enabledFor = 2;                        // Medical system enabled for AI
-    force ace_medical_AIDamageThreshold = 1.3;                  // AI can take 1.3 damage
+    force ace_medical_AIDamageThreshold = 1.3;                  // AI can take x damage
     force ace_medical_statemachine_AIUnconsciousness = true;    // AI can go unconscious
     force ace_medical_statemachine_fatalInjuriesAI = 0;         // AI can receive fatal injuries in any state
 
     /* Players specific */
-    force ace_medical_playerDamageThreshold = 1.3;              // Players can take 1.3 damage
+    force ace_medical_playerDamageThreshold = 1.3;              // Players can take x damage
     force ace_medical_statemachine_fatalInjuriesPlayer = 0;     // Fatal damage can be received in any state
 
     /* Fatal damage */
@@ -122,7 +124,7 @@
     force STHud_Settings_RemoveDeadViaProximity = true;     // STHud removes dead people from groups automagically
 // DO THIS FOR DUI TOO
 
-D E P E C R A T E D
+// D E P E C R A T E D
 // ADV - ACE SPLINT - Only used if present in mission
 /*
     force adv_aceSplint_enable = true;                      // Enable splint
