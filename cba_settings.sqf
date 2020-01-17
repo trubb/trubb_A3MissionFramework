@@ -18,7 +18,6 @@
     force ace_weather_windSimulation = false;               // turn off ACE's own map-based wind simulation
     force ace_weather_showCheckAirTemperature = false;      // And no dumb "show air temp" action either..
 
-
     /*************** ACE Hearing ***************/
     force ace_hearing_enableCombatDeafness = false;         // you don't go deaf when shooting
     force ace_hearing_autoAddEarplugsToUnits = false;       // And thanks to that we don't need those dumb earplugs
@@ -30,12 +29,12 @@
     /*************** ACE Medical ***************/
     /* AI specific */
     force ace_medical_ai_enabledFor = 0;                        // Medical system not enabled for AI
-    force ace_medical_AIDamageThreshold = 1.3;                  // AI can take x damage
+    force ace_medical_AIDamageThreshold = 1.0;                  // AI can take x damage
     force ace_medical_statemachine_AIUnconsciousness = false;   // AI can go unconscious
     force ace_medical_statemachine_fatalInjuriesAI = 0;         // AI can receive fatal injuries in any state
 
     /* Players specific */
-    force ace_medical_playerDamageThreshold = 2.0;              // Players can take x damage
+    force ace_medical_playerDamageThreshold = 1.0;              // Players can take x damage
     force ace_medical_statemachine_fatalInjuriesPlayer = 0;     // Fatal damage can be received in any state
 
     /* Fatal damage */
@@ -120,24 +119,18 @@
     force ace_overheating_unJamOnReload = true;             // Reloading attempts to unjam the weapon - people are crap at remembering keybinds
     force ace_overheating_enabled = true;                   // Weapons can overheat
 
-/*************** Shacktac UI ***************/
-    force STHud_Settings_RemoveDeadViaProximity = true;     // STHud removes dead people from groups automagically
-// DO THIS FOR DUI TOO
-
-// D E P E C R A T E D
-// ADV - ACE SPLINT - Only used if present in mission
-/*
-    force adv_aceSplint_enable = true;                      // Enable splint
-    force adv_aceSplint_reopenChance_medic = 0;             // Reopnen chance when medic applies
-    force adv_aceSplint_reopenChance_regular = 0;           // Reopen chance when anyone else applies
-    force adv_aceSplint_reopenTime = 600;                   // Minimum time before the splint can reopen
-    force adv_aceSplint_reuseChance = 100;                  // Chance of reusability
-*/
+    /*************** ACE NVG ***************/
+    force ace_nightvision_aimDownSightsBlur = 1;            // Sights are blurred
+    force ace_nightvision_disableNVGsWithSights = false;    // NVG overlay used with sight
+    force ace_nightvision_effectScaling = 0.5;              // Overall effect
+    force ace_nightvision_fogScaling = 0.5;                 // How much fog in terraing
+    force ace_nightvision_noiseScaling = 0.5;               // How much noise
+    force ace_nightvision_shutterEffects = true;            // "Shutter" effects from muzzle flash?
 
 /*************** TFAR ***************/
-    force TFAR_objectInterceptionEnabled = true;            // Terrain interception enabled
-    force TFAR_spectatorCanHearEnemyUnits = true;           // Spectator can hear enemy units
-    force TFAR_spectatorCanHearFriendlies = true;           // Spectator can hear friendly units
-    force TFAR_giveMicroDagrToSoldier = true;               // All soldiers get a MicroDAGR radio programmer
-    force TFAR_AICanHearPlayer = true;                      // AI can hear players talk
-    force TFAR_AICanHearSpeaker = true;                     // AI can hear radio speakers
+force TFAR_objectInterceptionEnabled = true;            // Terrain interception enabled
+force TFAR_spectatorCanHearEnemyUnits = true;           // Spectator can hear enemy units
+force TFAR_spectatorCanHearFriendlies = true;           // Spectator can hear friendly units
+force TFAR_giveMicroDagrToSoldier = true;               // All soldiers get a MicroDAGR radio programmer
+force TFAR_AICanHearPlayer = true;                      // AI can hear players talk
+force TFAR_AICanHearSpeaker = true;                     // AI can hear radio speakers
