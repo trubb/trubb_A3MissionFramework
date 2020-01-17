@@ -134,7 +134,7 @@ _maptools = "ACE_MapTools";
 
 #define BACKRADIO \
     _unit addBackpack _backradio; \
-    clearAllItemsFromBackpack _unit;
+    clearAllItemsFromBackpack _unit; \
     addItemCountToBackpack(_smoke, 2); \
     addItemCountToBackpack(_smoker, 2); \
     addItemCountToBackpack(_smokeg, 2);
