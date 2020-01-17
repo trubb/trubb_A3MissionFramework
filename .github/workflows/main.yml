@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-
       - uses: arma-actions/sqflint@v1.0
         name: Validate with SQFLint
+        with:
+          args: --exit w --directory ./trubb_A3MissionFramework/
