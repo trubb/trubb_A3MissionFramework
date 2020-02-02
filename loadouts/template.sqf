@@ -14,6 +14,8 @@ if (!(local _unit)) exitwith {}; // to make the script not run in some bad way
 #define addItemCountToVest(item, count) addItemCountToInventory(item, count, addItemToVest);
 #define addItemCountToBackpack(item, count) addItemCountToInventory(item, count, addItemToBackpack);
 
+#define addItemCountToCargo(item, count) addItemCargoGlobal [item, count];
+
 removeAllWeapons _unit;
 removeAllItems _unit;
 removeAllAssignedItems _unit;
