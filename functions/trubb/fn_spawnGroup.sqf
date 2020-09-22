@@ -27,7 +27,7 @@ private _group = [getMarkerPos _trubb_start, _trubb_side, _trubb_units ] call BI
 } forEach units _group;
 
 _group setFormation "LINE";
-_group setCombatMode "RED";
+_group setCombatMode "YELLOW";
 _group setBehaviour "AWARE";
 _group setSpeedMode "NORMAL";
 _group deleteGroupWhenEmpty true;
