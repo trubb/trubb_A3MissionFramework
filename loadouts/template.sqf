@@ -27,7 +27,7 @@ params ["_type", "_unit"];
     // Assign basic inventory items
     _unit linkItem "ItemMap";
     _unit linkItem "ItemCompass";
-    _unit linkItem "ItemRadio";     // Which radio will be given is defined via TFAR CBA Settings or here
+    _unit linkItem "TFAR_anprc152";
     _unit linkItem "ItemWatch";     // ItemWatch or TFAR_microdagr
     _unit linkItem "NVGoggles";     // Equip unit with NVG here
 

@@ -156,14 +156,21 @@ force acex_headless_log = false;                        // log disabled
 force acex_headless_transferLoadouts = 1;               // transfer current loadout
 
 /*************** TFAR ***************/
-//force TFAR_objectInterceptionEnabled = true;            // Terrain interception enabled
+force TFAR_objectInterceptionEnabled = false;            // Terrain interception disabled to avoid loud crackling noise in headphones
 force TFAR_spectatorCanHearEnemyUnits = true;           // Spectator can hear enemy units
 force TFAR_spectatorCanHearFriendlies = true;           // Spectator can hear friendly units
 force TFAR_giveMicroDagrToSoldier = true;               // All soldiers get a MicroDAGR radio programmer
 force TFAR_AICanHearPlayer = true;                      // AI can hear players talk
 force TFAR_AICanHearSpeaker = true;                     // AI can hear radio speakers
-
-// SET FREQUENCIES HERE INSTEAD OF USING ANROP BASICS
+force TFAR_SameLRFrequenciesForSide = true;				// all radios for side have same channel set?
+force TFAR_SameSRFrequenciesForSide = true;				// all radios for side have same channel set?
+force TFAR_setting_defaultFrequencies_lr_east = "70";
+force TFAR_setting_defaultFrequencies_lr_independent = "70";
+force TFAR_setting_defaultFrequencies_lr_west = "70";
+force TFAR_setting_defaultFrequencies_sr_east = "110,120,130,140,150,160,170,180,190";
+force TFAR_setting_defaultFrequencies_sr_independent = "110,120,130,140,150,160,170,180,190";
+force TFAR_setting_defaultFrequencies_sr_west = "110,120,130,140,150,160,170,180,190";
+force TFAR_globalRadioRangeCoef = 1.00;					// Range coefficient, 1.00 default
 
 /*************** TUN - Mobile Spawn Point ***************/
 force tun_msp_enable = true;                                        // MSP enabled
