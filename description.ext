@@ -8,15 +8,19 @@ overviewPicture = "loadscreen.jpg";
 onLoadMission = "";
 overviewText = "";
 
+// TUN RESPAWN SETTINGS
+respawn = "Base";
+Respawndelay = 999;
 DisabledAi = 1;
+
 /*
 RESPAWN and DELAY handled via 3DEN editor
 respawn = 1;
 respawnDelay = 2;
 */
-respawnButton = 1;
+//respawnButton = 1;
 enableDebugConsole = 1;
-respawnOnStart = -1;
+//respawnOnStart = -1;
 corpseLimit = 100;
 
 class CfgFunctions {
@@ -82,9 +86,9 @@ class Params
 	class f_param_mission_timer
 	{
 		title = "Safe Start";
-		values[] = {0,1,2,4,6,9,14};
+		values[] = {0,2,3,5,7,10,15};
 		texts[] = {"Safe Start Off","2","3","5","7","10","15"};
-		default = 0;
+		default = 5;
 		code = "f_param_mission_timer = %1";
 	};
 };

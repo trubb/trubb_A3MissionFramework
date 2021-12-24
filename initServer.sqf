@@ -12,7 +12,7 @@ spawnable_squad = [
 // Edit their values to your liking
 trubb_east_casualty_limit = 75;
 trubb_indep_casualty_limit = 75;
-trubb_west_casualty_limit = 75;
+trubb_west_casualty_limit = 100;
 
 // Do not edit these values yourself
 trubb_wait = false;
